@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="game.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<title>Micromachine</title>
+	
+	
+	<script>
+     	function pantallaCompleta() {
+			var lienzo = document.getElementById("Micromachine");
+			if(lienzo.requestFullscreen){
+				lienzo.requestFullscreen();
+			}
+		};
+     
+	</script>
+
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			
+			<div class="col align-self-center">
+				
+				<h2>MICROMACHINES</h2>
+				<p>Llevamos <span id="vueltas">0</span> vueltas. en <span id="segundos">0</span> segundos.</p>
+				<br>
+				
+					<button onclick="pantallaCompleta();">Pantalla completa</button>
+				</div>
+				
+			<div class="col align-self-center">
+				<canvas id="Micromachine" width="800" height="640"></canvas>
+				<canvas id="MicromachineHidden" width="800" height="640" style="display: none;"></canvas>
+			</div>
+		</div>
+		
+		<!-- div id="test" style="width: 50px; height: 50px; border:1px solid;"></div> -->
+		
+	</div>
+
+
+</body>
+</html>
